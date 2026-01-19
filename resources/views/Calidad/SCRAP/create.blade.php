@@ -2,7 +2,12 @@
 Calidad | SCRAP
 @endsection
 
-<x-app-layout>
+<x-app-layout :breadcrumbs="[
+    ['name' => 'Inicio', 'route' => route('home.index')],
+    ['name' => 'Calidad', 'route' => route('calidad.index')],
+    ['name' => 'SCRAP', 'route' => route('calidad.scrap.index')],
+    ['name' => 'Crear Nuevo Registro']
+]">
 
     <x-slot name="header">
         <h2 class="font-semibold text-2xl text-primary-text leading-tight">
@@ -11,15 +16,15 @@ Calidad | SCRAP
     </x-slot>
 
     <div class="flex justify-between items-center mb-4">
-        <x-button 
+        {{-- <x-button 
             textoBoton="Volver"
             tipoBoton="info"
             icono="arrow-left"
             tamanoBoton="small"
             :ruta="route('calidad.scrap.index')"
             >
-        </x-button>
-        <h3 class="text-xl font-bold text-gray-700">Crear Nuevo Registro de SCRAP</h3>
+        </x-button> --}}
+        {{-- <h3 class="text-xl font-bold text-gray-700">Crear Nuevo Registro de SCRAP</h3> --}}
     </div>
 
     <div class="my-4 bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm p-6">

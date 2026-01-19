@@ -2,7 +2,11 @@
 Calidad | SCRAP
 @endsection
 
-<x-app-layout>
+<x-app-layout :breadcrumbs="[
+    ['name' => 'Inicio', 'route' => route('home.index')],
+    ['name' => 'Calidad', 'route' => route('calidad.index')],
+    ['name' => 'SCRAP']
+]">
 
     <x-slot name="header">
         <h2 class="font-semibold text-2xl text-primary-text leading-tight">
@@ -10,7 +14,7 @@ Calidad | SCRAP
         </h2>
     </x-slot>
 
-    <h3 class="text-xl font-semibold text-gray-700">Listado</h3>
+    {{-- <h3 class="text-xl font-semibold text-gray-700">Listado</h3> --}}
 
     {{-- TODO: Crear componente de botón --}}
     <div class="flex justify-end my-4">

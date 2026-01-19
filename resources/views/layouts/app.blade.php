@@ -1,3 +1,6 @@
+@props(['breadcrumbs' => []])
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -40,8 +43,10 @@
                     </div>
                 </div>
 
+                @include('layouts.partials.breadcrumbs')
+
                 <!-- Page Content -->
-                <main class="p-4 lg:p-6">
+                <main class="px-4 lg:px-6">
                     {{ $slot }}
                 </main>
             </div>
