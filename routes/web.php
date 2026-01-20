@@ -22,3 +22,9 @@ Route::get('/calidad/registro-scrap', [CalidadSCRAPController::class, 'index'])-
 Route::get('/calidad/scrap/create', [CalidadSCRAPController::class, 'create'])->name('calidad.scrap.create');
 Route::post('/calidad/scrap/store', [CalidadSCRAPController::class, 'store'])->name('calidad.scrap.store');
 
+
+// Pagina para redirigir a 404
+Route::get('/page-not-found', function () {
+    return view('errors.page-not-found');
+})->name('page-not-found');
+
