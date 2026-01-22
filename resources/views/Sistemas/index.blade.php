@@ -5,12 +5,12 @@
 <x-app-layout>
 
     <x-slot name="header">
-        <h2 class="font-semibold text-2xl text-primary-text leading-tight">
+        <h2>
             {{ __('Sistemas') }}
         </h2>
     </x-slot>
 
-    <h3 class="text-xl font-semibold text-gray-700">Sitios</h3>
+    <h3 class="text-xl font-semibold text-secondary-800 my-4">Sitios</h3>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-2 bg-white p-5 rounded-xl border border-gray-200">
         <x-card 

@@ -2,6 +2,8 @@
 /* Importar la fuente Rubik desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
@@ -34,32 +36,6 @@
     --color-secondary-900: #171717;
     --color-secondary-950: #0a0a0a;
 
-    /* Color accent (teal/turquesa - triádico) */
-    --color-accent-50: #e9f7f6;
-    --color-accent-100: #d3efed;
-    --color-accent-200: #a7dfdb;
-    --color-accent-300: #7bcfc9;
-    --color-accent-400: #4fbfb7;
-    --color-accent-500: #2a9d94;
-    --color-accent-600: #1c8d7d;
-    --color-accent-700: #167062;
-    --color-accent-800: #115448;
-    --color-accent-900: #0b372f;
-    --color-accent-950: #061b17;
-
-    /* Colores neutros */
-    --color-gray-50: #f6f8fa;
-    --color-gray-100: #e8ecf0;
-    --color-gray-200: #d1d9e0;
-    --color-gray-300: #b3bfc9;
-    --color-gray-400: #8c9baa;
-    --color-gray-500: #66778a;
-    --color-gray-600: #4f5d6d;
-    --color-gray-700: #3a4654;
-    --color-gray-800: #272f3a;
-    --color-gray-900: #151a21;
-    --color-gray-950: #0a0d10;
-
     /* Colores de estado */
     --color-success-500: #22a35e;
     --color-success-600: #1b8249;
@@ -70,7 +46,13 @@
     --color-info-500: #1C4D8D;
     --color-info-600: #163d70;
 
-    --color-primary-text: #151a21;
+    --text-color-title-color: var(--color-gray-900);
+    --text-color-subtitle-color: var(--color-gray-800);
+    --text-color-body-color: var(--color-gray-700);
+
+    --text-size-title: var(--text-2xl);
+    --text-size-subtitle: var(--text-xl);
+    --text-size-body: var(--text-base);
 
     /* Fuentes personalizadas */
     --font-sans: 'Rubik', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';

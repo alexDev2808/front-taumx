@@ -20,23 +20,23 @@
         @livewireStyles
         @stack('styles')
     </head>
-    <body class="font-sans antialiased text-secondary-800">
+    <body class="font-sans antialiased text-secondary-800 text-size-body">
         <div class="min-h-screen bg-secondary-50">
             @include('layouts.navigation')
 
             <!-- Main Content Wrapper -->
             <div id="mainContent" class="transition-all duration-300 ease-in-out ml-0">
                 <!-- Top Bar -->
-                <div class="bg-white border border-gray-200 sticky top-0 z-40">
+                <div class="bg-white border-b border-secondary-300 sticky top-0 z-40">
                     <div class="px-4 py-3 flex items-center justify-between">
-                        <button id="toggleSidebar" class="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-50 rounded-lg p-2">
+                        <button id="toggleSidebar" class="text-secondary-600 hover:text-secondary-900 focus:outline-none focus:ring-0 rounded-lg p-2">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                         </button>
 
                         @if (isset($header))
-                            <div class="flex-1 ml-4">
+                            <div class="flex-1 ml-4 font-semibold text-size-title text-title-color leading-tight">
                                 {{ $header }}
                             </div>
                         @endif

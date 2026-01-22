@@ -4,6 +4,12 @@
 
 <x-app-layout>
 
-    Contenido de la página de inicio del usuario.
+    <x-slot name="header">
+        <h2>
+            {{ __('Dashboard') }}
+        </h2>
+    </x-slot>
+
+    <h3 class="font-semibold text-size-title text-subtitle-color my-4">Sitios</h3>
 
 </x-app-layout>
