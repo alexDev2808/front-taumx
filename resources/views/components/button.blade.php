@@ -14,7 +14,7 @@
 
 <a
     href="{{ $ruta }}"
-    class="{{ $claseTamanoBoton }} w-full md:w-auto {{ $claseColor }} font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors inline-flex items-center justify-center gap-1">
+    class="{{ $claseTamanoBoton }} w-full md:w-auto {{ $claseColor }} font-normal rounded-lg focus:outline-none focus:ring-0 transition-colors inline-flex items-center justify-center gap-1">
     @if($iconoSvg && $posicionIcono === 'left')
         {!! $iconoSvg !!}
     @endif

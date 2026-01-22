@@ -16,13 +16,10 @@ Calidad | SCRAP
 
     {{-- <h3 class="text-xl font-semibold text-gray-700">Listado</h3> --}}
 
-    {{-- TODO: Crear componente de botón --}}
     <div class="flex justify-end my-4">
         <x-button 
             textoBoton="Nuevo Registro" 
             tipoBoton="primary"
-            icono="plus"
-            posicionIcono="right"
             :ruta="route('calidad.scrap.create')"
             >
         </x-button>
@@ -32,7 +29,7 @@ Calidad | SCRAP
     <div class="my-4 bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
         <div class="overflow-x-auto">
             <table class="w-full text-sm text-left">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-100 border-b border-gray-200">
+                <thead class="text-xs text-secondary-700 uppercase bg-secondary-100 border-b border-secondary-300">
                     <tr>
                         <th class="px-6 py-4 font-semibold tracking-wider">Folio</th>
                         <th class="px-6 py-4 font-semibold tracking-wider">Responsable</th>

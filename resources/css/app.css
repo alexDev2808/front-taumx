@@ -8,34 +8,69 @@
 @source '../**/*.js';
 
 @theme {
-    /* Colores personalizados - primary */
-    --color-primary-50: #eff6ff;
-    --color-primary-100: #dbeafe;
-    --color-primary-200: #bfdbfe;
-    --color-primary-300: #93c5fd;
-    --color-primary-400: #60a5fa;
-    --color-primary-500: #3b82f6;
-    --color-primary-600: #2563eb;
-    --color-primary-700: #1d4ed8;
-    --color-primary-800: #1e40af;
-    --color-primary-900: #1e3a8a;
-    --color-primary-950: #172554;
+    /* Colores personalizados - primary (basado en #1C4D8D) */
+    --color-primary-50: #eaf1f9;
+    --color-primary-100: #d5e3f3;
+    --color-primary-200: #aac7e7;
+    --color-primary-300: #80abdb;
+    --color-primary-400: #558fcf;
+    --color-primary-500: #2b73c3;
+    --color-primary-600: #1C4D8D;
+    --color-primary-700: #163d70;
+    --color-primary-800: #112e54;
+    --color-primary-900: #0b1e37;
+    --color-primary-950: #060f1c;
 
-    --color-secondary-50: #f5f7ff;
-    --color-secondary-100: #e0e7ff;
-    --color-secondary-200: #c7d2fe;
-    --color-secondary-300: #a5b4fc;
-    --color-secondary-400: #818cf8;
-    --color-secondary-500: #6366f1;
-    --color-secondary-600: #4f46e5;
-    --color-secondary-700: #4338ca;
-    --color-secondary-800: #3730a3;
-    --color-secondary-900: #312e81;
-    --color-secondary-950: #23215a;
+    /* Colores secondary (grises neutros) */
+    --color-secondary-50: #fafafa;
+    --color-secondary-100: #f5f5f5;
+    --color-secondary-200: #e5e5e5;
+    --color-secondary-300: #d4d4d4;
+    --color-secondary-400: #a3a3a3;
+    --color-secondary-500: #737373;
+    --color-secondary-600: #525252;
+    --color-secondary-700: #404040;
+    --color-secondary-800: #262626;
+    --color-secondary-900: #171717;
+    --color-secondary-950: #0a0a0a;
 
+    /* Color accent (teal/turquesa - triádico) */
+    --color-accent-50: #e9f7f6;
+    --color-accent-100: #d3efed;
+    --color-accent-200: #a7dfdb;
+    --color-accent-300: #7bcfc9;
+    --color-accent-400: #4fbfb7;
+    --color-accent-500: #2a9d94;
+    --color-accent-600: #1c8d7d;
+    --color-accent-700: #167062;
+    --color-accent-800: #115448;
+    --color-accent-900: #0b372f;
+    --color-accent-950: #061b17;
 
+    /* Colores neutros */
+    --color-gray-50: #f6f8fa;
+    --color-gray-100: #e8ecf0;
+    --color-gray-200: #d1d9e0;
+    --color-gray-300: #b3bfc9;
+    --color-gray-400: #8c9baa;
+    --color-gray-500: #66778a;
+    --color-gray-600: #4f5d6d;
+    --color-gray-700: #3a4654;
+    --color-gray-800: #272f3a;
+    --color-gray-900: #151a21;
+    --color-gray-950: #0a0d10;
 
-    --color-primary-text: #313647;
+    /* Colores de estado */
+    --color-success-500: #22a35e;
+    --color-success-600: #1b8249;
+    --color-warning-500: #e6a117;
+    --color-warning-600: #b88012;
+    --color-error-500: #dc3545;
+    --color-error-600: #b02a37;
+    --color-info-500: #1C4D8D;
+    --color-info-600: #163d70;
+
+    --color-primary-text: #151a21;
 
     /* Fuentes personalizadas */
     --font-sans: 'Rubik', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';

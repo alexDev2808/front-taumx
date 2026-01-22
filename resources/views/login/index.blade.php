@@ -6,7 +6,7 @@
 <x-guest-layout>
 
 
-    <section class="bg-gray-50 dark:bg-gray-900">
+    <section class="bg-secondary-50 dark:bg-gray-900">
 
         <img class="absolute w-full h-full object-cover" src="{{ asset('assets/backgrounds/bg_azul.png') }}" alt="background login" />
 
@@ -17,10 +17,9 @@
             </div>
 
             <div class="w-full md:w-1/2 bg-white flex flex-col items-center justify-center px-6 py-8 rounded-3xl md:rounded-l-0">
-                <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-                    <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo">
-                    TES    
-                </a>
+
+                <x-brand-logo tamanoLogo="base" />
+
                 <div class="w-full md:mt-0 sm:max-w-md xl:p-0">
                     <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                         <h1 class="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
@@ -46,8 +45,8 @@
                                 </div>
                                 <a href="#" class="text-sm mt-4 md:mt-0 font-medium text-primary-900 hover:underline dark:text-primary-900">¿Olvidaste tu contraseña?</a>
                             </div>
-                            <button type="submit" class="w-full text-white bg-primary-900 hover:bg-primary-950 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Iniciar sesión</button>
-                            
+                            {{-- <button type="submit" class="w-full text-white bg-primary-900 hover:bg-primary-950 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Iniciar sesión</button> --}}
+                            <x-button textoBoton="Iniciar sesión" tipoBoton="primary" tamanoBoton="full"/>
                         </form>
                     </div>
                 </div>

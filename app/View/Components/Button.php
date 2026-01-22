@@ -37,18 +37,19 @@ class Button extends Component
         $this->tamanoBoton = $tamanoBoton;
 
         $estilos = [
-            'primary' => 'bg-primary-700 hover:bg-primary-800 focus:ring-primary-500 text-white',
-            'secondary' => 'bg-secondary-700 hover:bg-secondary-800 focus:ring-secondary-500 text-white',
-            'danger' => 'bg-red-700 hover:bg-red-800 focus:ring-red-500 text-white',
-            'success' => 'bg-green-700 hover:bg-green-800 focus:ring-green-500 text-white',
-            'warning' => 'bg-yellow-600 hover:bg-yellow-700 focus:ring-yellow-500 text-white',
-            'info' => 'bg-gray-100 hover:bg-gray-200 focus:ring-gray-500 text-gray-600 hover:text-gray-700',
+            'primary' => 'bg-primary-600 hover:bg-primary-700 text-white',
+            'secondary' => 'bg-secondary-600 hover:bg-secondary-700 text-white',
+            'danger' => 'bg-error-500 hover:bg-error-600 text-white',
+            'success' => 'bg-success-500 hover:bg-success-600 text-white',
+            'warning' => 'bg-warning-500 hover:bg-warning-600 text-white',
+            'info' => 'bg-secondary-100 text-gray-700 hover:text-gray-900 border border-gray-300',
         ];
 
         $tamanos = [
-            'small' => 'px-3 py-1 text-sm',
-            'normal' => 'px-4 py-2 text-base',
-            'large' => 'px-5 py-3 text-lg',
+            'small' => 'px-3 py-1 text-xs',
+            'normal' => 'px-4 py-2 text-sm',
+            'large' => 'px-5 py-3 text-md',
+            'full' => 'md:w-full px-4 py-2 text-sm',
         ];
 
         $tamanosIconos = [

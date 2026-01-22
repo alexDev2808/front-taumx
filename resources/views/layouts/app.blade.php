@@ -20,8 +20,8 @@
         @livewireStyles
         @stack('styles')
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-50">
+    <body class="font-sans antialiased text-secondary-800">
+        <div class="min-h-screen bg-secondary-50">
             @include('layouts.navigation')
 
             <!-- Main Content Wrapper -->
